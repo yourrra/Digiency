@@ -8,6 +8,7 @@
     /* Chrome 36+, Opera 23+, Firefox 39+ */
       url('../fonts/work-sans-v18-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* work-sans-500 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -18,6 +19,7 @@
     /* Chrome 36+, Opera 23+, Firefox 39+ */
       url('../fonts/work-sans-v18-latin-500.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* work-sans-600 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -118,3 +120,25 @@ button:not(:disabled) {
 img {
   display: block;
 }
+
+.bl {
+  width: 200px;
+  height: 200px;
+  background: red;
+
+  .bl2 {
+    background: black;
+
+    :hover {
+      background: red;
+    }
+  }
+
+  .bl:hover {
+    background: black;
+  }
+}
+
+/* .bl:hover {
+  background: black;
+} */

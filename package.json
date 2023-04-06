@@ -24,13 +24,25 @@
     "extends": [
       "eslint:recommended",
       "plugin:@typescript-eslint/recommended"
-    ]
+    ],
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true
+    }
+  },
+  "emmet.includeLanguages": {
+    "postcss": "css"
   },
   "browserslist": [
     "last 2 versions",
     "> 0.2%",
     "not dead"
   ],
+  "lint-staged": {
+    "*.ts": "eslint",
+    "*.js": "eslint"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.55.0",
     "@typescript-eslint/parser": "^5.55.0",
@@ -38,7 +50,10 @@
     "browserslist": "^4.21.5",
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.7.0",
+    "lint-staged": "^13.2.0",
     "postcss": "^8.4.21",
+    "postcss-nested": "^6.0.1",
+    "postcss-preset-env": "^8.3.0",
     "prettier": "^2.8.4",
     "stylelint": "^15.2.0",
     "stylelint-config-idiomatic-order": "^9.0.0",
