@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint src --ext ts",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "fix": "eslint src --ext ts --fix --quiet"
   },
   "prettier": {
     "printWidth": 80,
@@ -55,7 +56,7 @@
     "browserslist": "^4.21.5",
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.7.0",
-    "husky": "^8.0.3",
+    "husky": "^8.0.0",
     "is-ci": "^3.0.1",
     "lint-staged": "^13.2.0",
     "postcss": "^8.4.21",
