@@ -1,1 +1,6 @@
-npm run lint
+#!/bin/sh
+[ -z "$CI" ] && exit 0
+
+. "$(dirname $0)/_/husky.sh"
+
+pnpm run lint
