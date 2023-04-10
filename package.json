@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint src --ext ts",
+    "prepare": "is-ci || husky install"
   },
   "prettier": {
     "printWidth": 80,
@@ -41,6 +43,11 @@
     "*.{js,ts,md,html,css}": "prettier --write",
     "*.css": "stylelint"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pnpm run lint"
+    }
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.55.0",
     "@typescript-eslint/parser": "^5.55.0",
@@ -49,6 +56,7 @@
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.7.0",
     "husky": "^8.0.3",
+    "is-ci": "^3.0.1",
     "lint-staged": "^13.2.0",
     "postcss": "^8.4.21",
     "postcss-load-config": "^4.0.1",
