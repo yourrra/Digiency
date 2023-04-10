@@ -121,21 +121,38 @@ img {
   display: block;
 }
 
+/* :root {
+  --orange-color: #ff5300;
+  --black-color: #373737;
+  --gray-color: #7b7b7b;
+  --light-orange-color: #fff7f4;
+  --white-color: #fff;
+  --orange-shadow: 4px 5px 15px rgba(255, 83, 0, 40%);
+  --white-shadow: 0px 1px 10px rgba(0, 0, 0, 10%);
+} */
+
 .bl {
   width: 200px;
   height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background: red;
 
-  .bl2 {
+  &:hover {
     background: black;
-
-    :hover {
-      background: red;
-    }
   }
 
-  .bl:hover {
-    background: black;
+  .bl2 {
+    width: 50px;
+    height: 50px;
+    background: green;
+
+    &:hover {
+      background: blue;
+    }
   }
 }
 

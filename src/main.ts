@@ -3,13 +3,9 @@ import './style.css'
 import typescriptLogo from './typescript.svg'
 import { setupCounter } from './counter'
 
-const a
+const ad
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-      <div class="bl">
-      <div class="bl2">df</div>
-    </div>
   <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
