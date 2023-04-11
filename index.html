@@ -8,10 +8,866 @@
     <title>Vite + TS</title>
   </head>
   <body>
-    <div class="bl">
-      <div class="bl2">df</div>
+    <!-- Header start -->
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a href="/">
+              <img src="./img/svg/LOGO.svg" alt="Digiency" />
+            </a>
+          </div>
+
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#!" class="header__link">Home</a>
+              </li>
+              <li class="header__item">
+                <a href="#!" class="header__link">About Us</a>
+              </li>
+              <li class="header__item">
+                <a href="#!" class="header__link">Our Work</a>
+              </li>
+              <li class="header__item">
+                <a href="#!" class="header__link">Clients</a>
+              </li>
+              <li class="header__item">
+                <a href="#!" class="header__link">Our Blog</a>
+              </li>
+              <li class="header__item">
+                <a href="#!" class="header__link">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="header__button">
+            <img src="./img/svg/icon/buttons/Dark.svg" alt="Dark" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Main start -->
+    <main class="main">
+      <!-- SocialBar start -->
+      <nav class="social__nav">
+        <ul class="social__list">
+          <li class="social__item">
+            <a
+              href="#!"
+              onMouseOver="document.getElementById('facebook').src='./img/svg/icon/socialBar/facebook-active.jpg'"
+              onMouseOut="document.getElementById('facebook').src='./img/svg/icon/socialBar/facebook.jpg'"
+            >
+              <img
+                id="facebook"
+                src="./img/svg/icon/socialBar/facebook.jpg"
+                alt="facebook"
+              />
+            </a>
+          </li>
+          <li class="social__item">
+            <a
+              href="#!"
+              onMouseOver="document.getElementById('instagram').src='./img/svg/icon/socialBar/instagram-active.jpg'"
+              onMouseOut="document.getElementById('instagram').src='./img/svg/icon/socialBar/instagram.jpg'"
+              ><img
+                id="instagram"
+                src="./img/svg/icon/socialBar/instagram.jpg"
+                alt="instagram"
+            /></a>
+          </li>
+          <li class="social__item">
+            <a
+              href="#!"
+              onMouseOver="document.getElementById('twitter').src='./img/svg/icon/socialBar/twitter-active.jpg'"
+              onMouseOut="document.getElementById('twitter').src='./img/svg/icon/socialBar/twitter.jpg'"
+              ><img
+                id="twitter"
+                src="./img/svg/icon/socialBar/twitter.jpg"
+                alt="twitter"
+            /></a>
+          </li>
+          <li class="social__item">
+            <a
+              href="#!"
+              onMouseOver="document.getElementById('skype').src='./img/svg/icon/socialBar/skype-active.jpg'"
+              onMouseOut="document.getElementById('skype').src='./img/svg/icon/socialBar/skype.jpg'"
+              ><img
+                id="skype"
+                src="./img/svg/icon/socialBar/skype.jpg"
+                alt="skype"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- SocialBar end -->
+
+      <!-- Intro start -->
+      <section class="intro">
+        <div class="wrapper">
+          <div class="intro__wrapper">
+            <div class="intro__text">
+              <h1 class="intro__title">
+                We Are The Best
+                <span class="intro__title-orange">Digital Agency</span>
+                for business
+              </h1>
+              <p class="intro__paragraph">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+              <button class="button__contact">Contact Us</button>
+            </div>
+            <div class="intro__img">
+              <img src="./img/png/Intro_image.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Intro end -->
+
+      <!-- About start -->
+      <section class="about">
+        <div class="wrapper">
+          <div class="about__wrapper">
+            <div class="about__img">
+              <img src="./img/png/About_image.png" alt="" />
+            </div>
+
+            <div class="about__text">
+              <p class="about__topic">About Us</p>
+              <h2 class="about__title">
+                We Are
+                <span class="about__title-orange">Making</span>
+              </h2>
+              <h2 class="about__title">
+                <span class="about__title-orange">Ideas Better</span>
+                For Everyone
+              </h2>
+              <p class="about__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nascetur imperdiet at a augue ullamcorper. Leo faucibus feugiat
+                rutrum aenean. Nisi, lectus aliquet aliquam consectetur augue
+                praesent. Lorem vulputate orci eget mi, sed pulvinar.
+                <br />
+                <br />
+                Ornare etiam erat volutpat tempor fringilla mi. Elit a blandit
+                faucibus est, dui interdum ut amet. Adipiscing feugiat vel at
+                posuere in. Pellentesque volutpat vestibulum.
+              </p>
+              <button class="button__contact">Contact Us</button>
+            </div>
+          </div>
+          <div class="about__cardblock">
+            <div class="about__card">
+              <img
+                class="about__icon-orange"
+                src="./img/png/cardBlock/Card_orange.png"
+                alt="orange"
+              />
+              <p class="about__card-text">
+                World leader in consulting<br />
+                and finance
+              </p>
+            </div>
+            <div class="about__card">
+              <img
+                class="about__icon-gray"
+                src="./img/png/cardBlock/Card_gray.png"
+                alt="gray"
+              />
+              <p class="about__card-text">
+                A focused team with a<br />
+                specialized skill
+              </p>
+            </div>
+            <div class="about__card">
+              <img
+                class="about__icon-blue"
+                src="./img/png/cardBlock/Card_blue.png"
+                alt="blue"
+              />
+              <p class="about__card-text">
+                Trusted and professional<br />
+                advisors for you
+              </p>
+            </div>
+            <div class="about__card">
+              <img
+                class="about__icon-dark"
+                src="./img/png/cardBlock/Card_dark.png"
+                alt="dark"
+              />
+              <p class="about__card-text">
+                Experience to give you a<br />
+                better results
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About end -->
+
+      <!-- Expereince start -->
+      <section class="expereince">
+        <div class="wrapper">
+          <div class="expereince__wrapper">
+            <div class="expereince__text">
+              <p class="expereince__topic">Our Expereince</p>
+              <h2 class="expereince__title">
+                We Have Completed
+                <span class="expereince__title-orange">150+ Projects</span>
+                Succesfully
+              </h2>
+              <p class="expereince__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nascetur imperdiet at a augue ullamcorper. Leo faucibus feugiat
+                rutrum aenean. Nisi, lectus aliquet aliquam consectetur augue
+                praesent. Lorem vulputate orci eget mi, sed pulvinar.
+                <br />
+                <br />
+                Ornare etiam erat volutpat tempor fringilla mi. Elit a blandit
+                faucibus est, dui interdum ut amet. Adipiscing feugiat vel at
+                posuere in. Pellentesque volutpat vestibulum.
+              </p>
+              <button class="button__contact">Contact Us</button>
+            </div>
+
+            <div class="expereince__wrapper-cardblock">
+              <div class="expereince__cardblock-first">
+                <div class="expereince__card">
+                  <h1 class="expereince__card-title">250+</h1>
+                  <p class="expereince__card-text">Global Customer</p>
+                </div>
+                <div class="expereince__card">
+                  <h1 class="expereince__card-title">50+</h1>
+                  <p class="expereince__card-text">Team Member</p>
+                </div>
+              </div>
+              <div class="expereince__cardblock-second">
+                <div class="expereince__card">
+                  <h1 class="expereince__card-title">156+</h1>
+                  <p class="expereince__card-text">Project Completed</p>
+                </div>
+                <div class="expereince__card">
+                  <h1 class="expereince__card-title">15+</h1>
+                  <p class="expereince__card-text">Our Company</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Expereince end -->
+
+      <!-- Team start -->
+      <section class="team">
+        <div class="wrapper">
+          <div class="team__wrapper">
+            <p class="team__topic">Team Member</p>
+            <h2 class="team__title">We Are</h2>
+            <h2 class="team__title">
+              <span class="team__title-orange">Some Awesome</span>
+              People
+            </h2>
+          </div>
+          <div class="team__cardblock">
+            <div class="team__card">
+              <img
+                class="team__photo"
+                src="./img/jpeg/team/Gustavo.jpg"
+                alt="gustavo"
+              />
+              <p class="team__card-title">Gustavo Herwitz</p>
+              <p class="team__card-text">UI/UX Designer</p>
+            </div>
+            <div class="team__card">
+              <img
+                class="team__photo"
+                src="./img/jpeg/team/Philip.jpg"
+                alt="philip"
+              />
+              <p class="team__card-title">Phillip Curtis</p>
+              <p class="team__card-text">Graphic Designer</p>
+            </div>
+            <div class="team__card">
+              <img
+                class="team__photo"
+                src="./img/jpeg/team/Talan.jpg"
+                alt="talan"
+              />
+              <p class="team__card-title">Talan Torff</p>
+              <p class="team__card-text">Web Developer</p>
+            </div>
+            <div class="team__card">
+              <img
+                class="team__photo"
+                src="./img/jpeg/team/Abram.png"
+                alt="abram"
+              />
+              <p class="team__card-title">Abram Vaccaro</p>
+              <p class="team__card-text">App Developer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Team end -->
+
+      <!-- Work start -->
+      <section class="work">
+        <div class="wrapper">
+          <div class="work__wrapper">
+            <p class="work__topic">Our Work</p>
+            <h2 class="work__title">We Have Some</h2>
+            <h2 class="work__title">
+              <span class="work__title-orange">Designed & Development</span>
+              Projects
+            </h2>
+
+            <nav class="work__nav">
+              <ul class="work__list">
+                <li class="work__item">
+                  <a href="#!" class="work__link">All </a>
+                </li>
+                <li class="work__item">
+                  <a href="#!" class="work__link">Graphic Design</a>
+                </li>
+                <li class="work__item">
+                  <a href="#!" class="work__link">UI/UX Design </a>
+                </li>
+                <li class="workr__item">
+                  <a href="#!" class="work__link">Web Development</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="work__cardblock">
+            <div class="work__wrapper-card">
+              <div class="work__card">
+                <img
+                  class="work__img"
+                  src="./img/jpeg/work/Img_c1_i1.jpg"
+                  alt="gustavo"
+                />
+              </div>
+              <div class="work__card">
+                <img
+                  class="work__img"
+                  src="./img/jpeg/work/Img_c1_i2.jpg"
+                  alt="philip"
+                />
+              </div>
+            </div>
+            <div class="work__wrapper-card">
+              <div class="work__card">
+                <img
+                  class="work__img"
+                  src="./img/jpeg/work/Img_c2_i1.jpg"
+                  alt="talan"
+                />
+              </div>
+              <div class="work__card">
+                <img
+                  class="work__img"
+                  src="./img/jpeg/work/Img_c2_i2.jpg"
+                  alt="abram"
+                />
+              </div>
+            </div>
+            <div class="work__wrapper-card">
+              <div class="work__card">
+                <img
+                  class="work__img"
+                  src="./img/jpeg/work/Img_c3_i1.jpg"
+                  alt="talan"
+                />
+              </div>
+              <div class="work__card">
+                <img
+                  class="work__img"
+                  src="./img/jpeg/work/Img_c3_i2.jpg"
+                  alt="abram"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Work end -->
+
+      <!-- Feedback start -->
+      <section class="feedback">
+        <div class="wrapper">
+          <div class="feedback__wrapper">
+            <p class="feedback__topic">Clients Feedback</p>
+            <h2 class="feedback__title">
+              Some
+              <span class="feedback__title-orange">Great</span>
+            </h2>
+            <h2 class="feedback__title">
+              <span class="feedback__title-orange">Words</span>
+              From Our Clients
+            </h2>
+          </div>
+
+          <div class="feedback__cardblock">
+            <div class="feedback__card">
+              <img
+                class="feedback__photo"
+                src="./img/jpeg/feedback/Justin.jpg"
+                alt="justin"
+              />
+              <div class="feedback__text">
+                <p class="feedback__text-title">Justin Septimus</p>
+                <p class="feedback__text-post">CEO,word yt</p>
+                <p class="feedback__text-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a
+                  laoreet libero dis eget maecenas bibendum. Morbi lacinia eu,
+                  etiam volutpat morbi et amet, sagittis adipiscing.
+                </p>
+              </div>
+            </div>
+            <div class="feedback__card">
+              <img
+                class="feedback__photo"
+                src="./img/jpeg/feedback/Ashlynn.jpg"
+                alt="ashlynn"
+              />
+              <div class="feedback__text">
+                <p class="feedback__text-title">Ashlynn Gouse</p>
+                <p class="feedback__text-post">Managing Director</p>
+                <p class="feedback__text-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a
+                  laoreet libero dis eget maecenas bibendum. Morbi lacinia eu,
+                  etiam volutpat morbi et amet, sagittis adipiscing.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="slider">
+            <div class="slider__element-first"></div>
+            <div class="slider__element-second"></div>
+            <div class="slider__element-third"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Feedback end -->
+
+      <!-- Blog start -->
+      <section class="blog">
+        <div class="wrapper">
+          <div class="blog__wrapper">
+            <p class="blog__topic">Our Blog</p>
+            <h2 class="blog__title">
+              Our Latest
+              <span class="blog__title-orange">Blogs</span>
+            </h2>
+            <h2 class="blog__title">
+              <span class="blog__title-orange">Will Keep</span>
+              Everyone Updated
+            </h2>
+          </div>
+
+          <div class="blog__cardblock">
+            <div class="blog__card">
+              <div class="blog__post">
+                <div class="blog__post-text">
+                  <p class="blog__post-text-title">Graphic Design</p>
+                  <p class="blog__post-text-description">
+                    35 Stellar Graphic Design Blogs to Keep You Educated and
+                    Inspired
+                  </p>
+                </div>
+                <img
+                  class="blog__post-photo"
+                  src="./img/jpeg/blog/post/Post_1.jpg"
+                  alt="post_1"
+                />
+              </div>
+              <div class="blog__user">
+                <img
+                  class="blog__user-photo"
+                  src="./img/jpeg/blog/user/User_1.jpg"
+                  alt="user_1"
+                />
+                <div class="blog__user-text">
+                  <p class="blog__user-text-name">Cristofer Westervelt</p>
+                  <div class="blog__user-text_wrap">
+                    <p class="blog__user-text-date">January 25, 2021</p>
+                    <div class="dot"></div>
+                    <p class="blog__user-text-date">5 min Read</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog__card">
+              <div class="blog__post">
+                <div class="blog__post-text">
+                  <p class="blog__post-text-title">Managing Director</p>
+                  <p class="blog__post-text-description">
+                    Ridiculously powerful 2021 iPad Pro may drop this month
+                  </p>
+                </div>
+                <img
+                  class="blog__post-photo"
+                  src="./img/jpeg/blog/post/Post_2.jpg"
+                  alt="post_2"
+                />
+              </div>
+              <div class="blog__user">
+                <img
+                  class="blog__user-photo"
+                  src="./img/jpeg/blog/user/User_2.jpg"
+                  alt="user_2"
+                />
+                <div class="blog__user-text">
+                  <p class="blog__user-text-name">Haylie Mango</p>
+                  <div class="blog__user-text_wrap">
+                    <p class="blog__user-text-date">January 25, 2021</p>
+                    <div class="dot"></div>
+                    <p class="blog__user-text-date">5 min Read</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider">
+            <div class="slider__element-first"></div>
+            <div class="slider__element-second"></div>
+            <div class="slider__element-third"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Blog end -->
+
+      <!-- Contact start -->
+      <section class="contact">
+        <div class="wrapper">
+          <div class="contact__wrapper">
+            <p class="contact__topic">Contact Us</p>
+            <h2 class="contact__title">
+              Feel
+              <span class="contact__title-orange">Free</span>
+            </h2>
+            <h2 class="contact__title">
+              <span class="contact__title-orange">to Contact</span>
+              With Us
+            </h2>
+          </div>
+
+          <div class="contact__cardblock">
+            <div class="contact__card">
+              <div class="contact__card-topic">
+                <img
+                  class="contact__img"
+                  src="./img/svg/icon/contact/mail.svg"
+                  alt="mail"
+                />
+                <div class="contact__text">
+                  <p class="contact__text-title">Drop a line</p>
+                  <p class="contact__text-description">Mail Us</p>
+                </div>
+              </div>
+              <div class="contact__block-mail">
+                <p class="contact__mail">Support87@gmial.com</p>
+                <p class="contact__mail">ijkuiu874@gmial.com</p>
+              </div>
+            </div>
+            <div class="contact__card">
+              <div class="contact__card-topic">
+                <img
+                  class="contact__img"
+                  src="./img/svg/icon/contact/phone-call.svg"
+                  alt="phone"
+                />
+                <div class="contact__text">
+                  <p class="contact__text-title">24/7 Service</p>
+                  <p class="contact__text-description">Call Us</p>
+                </div>
+              </div>
+              <div class="contact__block-mail">
+                <div class="contact__phone-wrap">
+                  <p class="contact__phone">+880 265 98745</p>
+                  <p class="contact__phone-free">(Toll free)</p>
+                </div>
+                <p class="contact__phone">+895 855 85589</p>
+              </div>
+            </div>
+            <div class="contact__card">
+              <div class="contact__card-topic">
+                <img
+                  class="contact__img"
+                  src="./img/svg/icon/contact/map-pin.svg"
+                  alt="map"
+                />
+                <div class="contact__text">
+                  <p class="contact__text-title">Location</p>
+                  <p class="contact__text-description">Visit Us</p>
+                </div>
+              </div>
+              <div class="contact__block-mail">
+                <p class="contact__location">
+                  158 ralegih sit, houston, yk 5896,uk
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="send-message__wrapper">
+            <div class="send-message__conteiner">
+              <div class="send-message__img">
+                <img src="./img/png/Contact_image.png" alt="" />
+              </div>
+            </div>
+
+            <div class="send-message__text">
+              <h2 class="search-form__title">
+                Send Your
+                <span class="send-message__title-orange">Message To Us</span>
+              </h2>
+
+              <form class="search-form">
+                <div class="search-form-wrapper">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    class="search-form__input"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Email"
+                    class="search-form__input"
+                  />
+                </div>
+                <div class="search-form-wrapper">
+                  <input
+                    type="text"
+                    placeholder="Mobile No"
+                    class="search-form__input"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Subject"
+                    class="search-form__input"
+                  />
+                </div>
+                <textarea
+                  class="search-form__input-message"
+                  placeholder="Send Massage"
+                  resize="none"
+                ></textarea>
+              </form>
+
+              <button class="button__send">Send Massage</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact end -->
+
+      <!-- Map start -->
+      <section class="map">
+        <div class="wrapper">
+          <div class="map__img">
+            <img src="./img/jpeg/map/Map.jpg" alt="map" />
+          </div>
+        </div>
+      </section>
+      <!-- Map end -->
+
+      <!-- Medal start -->
+      <section class="medal">
+        <div class="wrapper">
+          <div class="medal__cardblock">
+            <div class="map__img">
+              <img src="./img/png/medal/Medal_1.png" alt="medal_1" />
+            </div>
+            <div class="map__img">
+              <img src="./img/png/medal/Medal_2.png" alt="medal_2" />
+            </div>
+            <div class="map__img">
+              <img src="./img/png/medal/Medal_3.png" alt="medal_3" />
+            </div>
+            <div class="map__img">
+              <img src="./img/png/medal/Medal_4.png" alt="medal_4" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Medal end -->
+    </main>
+    <!-- Main end -->
+
+    <!-- Footer start -->
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__item">
+          <div class="footer__wrapper-firstblock">
+            <div class="footer__info">
+              <h2 class="footer__title">
+                <span class="footer__title-orange">Digie</span>ncy
+              </h2>
+
+              <p class="footer__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a
+                laoreet libero dis eget maecenas bibendum.
+              </p>
+
+              <nav class="footer__social">
+                <ul class="footer__social-list">
+                  <li class="footer__social-item">
+                    <a
+                      href="#!"
+                      onMouseOver="document.getElementById('footer-facebook').src='./img/svg/icon/socialBar/facebook-active.jpg'"
+                      onMouseOut="document.getElementById('footer-facebook').src='./img/svg/icon/socialBar/facebook.jpg'"
+                    >
+                      <img
+                        id="footer-facebook"
+                        src="./img/svg/icon/socialBar/facebook.jpg"
+                        alt="footer-facebook"
+                      />
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a
+                      href="#!"
+                      onMouseOver="document.getElementById('footer-instagram').src='./img/svg/icon/socialBar/instagram-active.jpg'"
+                      onMouseOut="document.getElementById('footer-instagram').src='./img/svg/icon/socialBar/instagram.jpg'"
+                      ><img
+                        id="footer-instagram"
+                        src="./img/svg/icon/socialBar/instagram.jpg"
+                        alt="footer-instagram"
+                    /></a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a
+                      href="#!"
+                      onMouseOver="document.getElementById('footer-twitter').src='./img/svg/icon/socialBar/twitter-active.jpg'"
+                      onMouseOut="document.getElementById('footer-twitter').src='./img/svg/icon/socialBar/twitter.jpg'"
+                      ><img
+                        id="footer-twitter"
+                        src="./img/svg/icon/socialBar/twitter.jpg"
+                        alt="footer-twitter"
+                    /></a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a
+                      href="#!"
+                      onMouseOver="document.getElementById('footer-skype').src='./img/svg/icon/socialBar/skype-active.jpg'"
+                      onMouseOut="document.getElementById('footer-skype').src='./img/svg/icon/socialBar/skype.jpg'"
+                      ><img
+                        id="footer-skype"
+                        src="./img/svg/icon/socialBar/skype.jpg"
+                        alt="footer-skype"
+                    /></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="footer__company">
+              <h2 class="footer__title">Company</h2>
+
+              <nav class="footer__nav">
+                <ul class="footer__menu">
+                  <li class="footer__menu-item">
+                    <a href="#!" class="footer__menu-link">About Us</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="#!" class="footer__menu-link">Our Work</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="#!" class="footer__menu-link">Client</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="#!" class="footer__menu-link">Our Blog</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="#!" class="footer__menu-link">Contact US</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="footer__wrapper-secondblock">
+            <div class="footer__services">
+              <h2 class="footer__title">Sevices</h2>
+
+              <nav class="footer__nav">
+                <ul class="footer__menu">
+                  <li class="footer__menu-item">
+                    <a href="#!" class="footer__menu-link">Graphic Design</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="#!" class="footer__menu-link">UI/UX Design</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="#!" class="footer__menu-link">Web Development</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="#!" class="footer__menu-link">App Development</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="#!" class="footer__menu-link">Web Hosting</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="footer__letter">
+              <h2 class="footer__title">Newsletter</h2>
+
+              <p class="footer__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+                Lorem eget varius viverra in.
+              </p>
+              <div class="footer__input-wrap">
+                <input
+                  type="text"
+                  class="footer__input"
+                  placeholder="info@gmail.com"
+                />
+                <button class="footer__input-button">
+                  <img
+                    src="./img/svg/icon/socialBar/send-plane-fill.png"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright">
+      <div class="wrapper">
+        <div class="copyright__item">
+          <div class="copyright__text">
+            <div class="copyright__text-icon">
+              <img
+                src="./img/svg/icon/copyright/copyright-fill.svg"
+                alt="copyright"
+              />
+            </div>
+            <p class="copyright__text-text">
+              Copyright 2021. All Right Reserved By Ojjomedia
+            </p>
+          </div>
+          <button class="copyright__button">
+            <img
+              src="./img/svg/icon/copyright/arrow-up-fill.svg"
+              alt="arrow-up"
+            />
+          </button>
+        </div>
+      </div>
     </div>
-    <div id="app"></div>
+    <!-- Footer end -->
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
