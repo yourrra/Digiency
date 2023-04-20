@@ -17,8 +17,8 @@ pre,
 input,
 button,
 fieldset {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 /* Remove unexpected flex behaviour */
