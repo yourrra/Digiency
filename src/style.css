@@ -312,10 +312,9 @@ textarea:focus:input-placeholder {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  width: 100%;
 
   .header__logo {
-    padding: 9px 0;
+    padding: 10px 0;
 
     img {
       width: 102px;
@@ -391,7 +390,6 @@ textarea:focus:input-placeholder {
 /* intro */
 
 .intro__wrapper {
-  width: 100%;
   padding-top: 100px;
   padding-bottom: 50px;
 
@@ -423,10 +421,9 @@ textarea:focus:input-placeholder {
 /* about */
 
 .about__wrapper {
-  width: 100%;
   padding: 50px 0;
 
-  img {
+  .about__img {
     margin: 0 auto;
     margin-bottom: 50px;
   }
@@ -455,22 +452,20 @@ textarea:focus:input-placeholder {
 }
 
 .about__cardblock {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
   .about__card {
-    height: 200px;
-    margin-bottom: 25px;
+    padding: 25px 42px 18px;
     background: var(--white-color);
     box-shadow: var(--white-shadow);
-
-    &:last-child {
-      margin: 0;
-    }
   }
 
   .about__block-img {
     display: flex;
     justify-content: center;
     margin-bottom: 37px;
-    padding-top: 25px;
   }
 
   .about__icon-orange {
@@ -538,20 +533,22 @@ textarea:focus:input-placeholder {
 }
 
 .expereince__wrapper-cardblock {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
   .expereince__card {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+    justify-content: center;
     height: 250px;
-    margin-bottom: 25px;
     background: var(--white-color);
     box-shadow: var(--white-shadow);
-
-    &:last-child {
-      margin: 0;
-    }
   }
 
   .expereince__card-title {
-    margin-bottom: 18px;
-    padding-top: 74px;
     color: var(--black-color);
     font-weight: 700;
     font-size: 48px;
@@ -593,6 +590,8 @@ textarea:focus:input-placeholder {
 .team__cardblock {
   display: flex;
   gap: 15px;
+  margin: -10px;
+  padding: 10px;
   overflow: auto;
 
   &::-webkit-scrollbar {
@@ -672,13 +671,11 @@ textarea:focus:input-placeholder {
 }
 
 .work__cardblock {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
   .work__card {
-    margin-bottom: 25px;
-
-    &:last-child {
-      margin: 0;
-    }
-
     box-shadow: var(--white-shadow);
   }
 }
@@ -706,7 +703,9 @@ textarea:focus:input-placeholder {
 
 .feedback__cardblock {
   display: flex;
-  gap: 18px;
+  gap: 28px;
+  margin: -10px;
+  padding: 10px;
   overflow-x: auto;
 
   &::-webkit-scrollbar {
@@ -715,21 +714,24 @@ textarea:focus:input-placeholder {
 }
 
 .feedback__card {
-  display: flex;
+  position: relative;
+  flex-shrink: 0;
   width: 226px;
-  height: 177px;
   margin-bottom: 25px;
+  margin-left: 10px;
   background: var(--orange-color);
   box-shadow: var(--white-shadow);
 }
 
 .feedback__photo {
+  position: absolute;
   margin-top: 26px;
+  margin-left: -20px;
   border-radius: 50%;
 }
 
 .feedback__text {
-  margin-top: 26px;
+  padding: 26px 18px 12px 35px;
 }
 
 .feedback__text-title {
@@ -808,7 +810,9 @@ textarea:focus:input-placeholder {
 .blog__cardblock {
   display: flex;
   gap: 18px;
+  margin: -10px;
   margin-bottom: 25px;
+  padding: 10px;
   overflow-x: auto;
 
   &::-webkit-scrollbar {
@@ -821,6 +825,7 @@ textarea:focus:input-placeholder {
 }
 
 .card {
+  min-width: 296px;
   padding: 0 18px;
   padding-top: 18px;
   padding-bottom: 27px;
@@ -910,9 +915,15 @@ textarea:focus:input-placeholder {
   text-align: center;
 }
 
+.contact__cardblock {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 62px;
+}
+
 .contact__card {
-  width: 343px;
-  height: 224px;
+  padding: 18px 49px 30px 18px;
   background: var(--white-color);
   box-shadow: var(--white-shadow);
 }
@@ -944,12 +955,6 @@ textarea:focus:input-placeholder {
 }
 
 .contact__block-mail {
-  margin-bottom: 25px;
-
-  &:last-child {
-    margin: 0;
-  }
-
   a {
     color: var(--gray-color);
     font-weight: 500;
@@ -959,7 +964,11 @@ textarea:focus:input-placeholder {
   }
 }
 
-.contact__mail {
+.contact__phone-wrap {
+  display: flex;
+}
+
+.contact__phone {
   margin-bottom: 18px;
   color: var(--gray-color);
   font-weight: 500;
@@ -967,46 +976,51 @@ textarea:focus:input-placeholder {
   line-height: 123.6%;
 }
 
-.contact__phone-wrap {
-  display: flex;
-}
-
-.contact__phone {
-  margin-bottom: 18px;
-  color: #7b7b7b;
-  font-weight: 500;
-  font-size: 20px;
-  font-style: normal;
-  line-height: 123.6%;
-}
-
 .contact__phone-free {
   margin-left: 18px;
-  color: #ff5300;
+  color: var(--orange-color);
   font-weight: 500;
   font-size: 20px;
-  font-style: normal;
   line-height: 123.6%;
 }
 
 .contact__location {
   width: 198px;
-  color: #7b7b7b;
+  color: var(--gray-color);
   font-weight: 500;
   font-size: 20px;
   font-style: normal;
   line-height: 123.6%;
 }
 
+.send-message__img {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.send-message__text {
+  .search-form__title {
+    margin-bottom: 18px;
+  }
+
+  p {
+    color: var(--black-color);
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 123.6%;
+    text-align: center;
+  }
+}
+
 .button__send {
   width: 190px;
   height: 50px;
-  color: #fff;
+  color: var(--white-color);
   font-weight: 500;
   font-size: 20px;
   font-style: normal;
   line-height: 123.6%;
-  background: #ff5300;
+  background: var(--orange-color);
   border: none;
   border-radius: 5px;
   box-shadow: 4px 5px 15px rgb(255 83 0 / 40%);
