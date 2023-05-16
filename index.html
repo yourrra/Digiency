@@ -13,7 +13,14 @@
       <div class="wrapper">
         <header class="header">
           <a href="/" class="header__logo">
-            <img width="102" height="32" src="./assets/logo.svg" alt="" />
+            <img
+              class="header_logo-img"
+              width="102"
+              height="32"
+              src="./assets/logo.svg"
+              alt="logo"
+              aria-label="logo"
+            />
           </a>
           <div class="header__theme">
             <button type="button" class="header__theme-button">
@@ -43,12 +50,12 @@
     <!-- header -->
 
     <!-- Main -->
-
     <!-- Intro start -->
     <div class="background__color-orange">
       <div class="wrapper">
         <div class="intro__wrapper">
           <img
+            class="intro__img"
             width="335"
             height="225"
             src="./assets/intro-image.png"
@@ -77,33 +84,35 @@
     <!-- About start -->
     <div class="wrapper">
       <div class="about__wrapper">
-        <img
-          class="about__img"
-          height="192"
-          src="./assets/about-image.png"
-          alt="About img"
-          aria-label="About img"
-        />
+        <div class="about__textblock">
+          <img
+            class="about__img"
+            height="192"
+            src="./assets/about-image.png"
+            alt="About img"
+            aria-label="About img"
+          />
 
-        <div class="about__text">
-          <p class="about__topic">About Us</p>
-          <h2 class="about__title">
-            We Are
-            <span class="block__title-orange">Making</span>
-            <span class="block__title-orange">Ideas Better</span>
-            For Everyone
-          </h2>
-          <p class="about__paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
-            imperdiet at a augue ullamcorper. Leo faucibus feugiat rutrum
-            aenean.
-            <br />
-            <br />
-            Ornare etiam erat volutpat tempor fringilla mi. Elit a blandit
-            faucibus est, dui interdum ut amet.
-          </p>
-          <div class="wrapper-button">
-            <button class="button__contact">Contact Us</button>
+          <div class="about__text">
+            <p class="about__topic">About Us</p>
+            <h2 class="about__title">
+              We Are
+              <span class="block__title-orange">Making</span>
+              <span class="block__title-orange">Ideas Better</span>
+              For Everyone
+            </h2>
+            <p class="about__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
+              imperdiet at a augue ullamcorper. Leo faucibus feugiat rutrum
+              aenean.
+              <br />
+              <br />
+              Ornare etiam erat volutpat tempor fringilla mi. Elit a blandit
+              faucibus est, dui interdum ut amet.
+            </p>
+            <div class="wrapper-button">
+              <button class="button__contact">Contact Us</button>
+            </div>
           </div>
         </div>
 
@@ -111,8 +120,6 @@
           <div class="about__card">
             <div class="about__block-img">
               <img
-                width="70"
-                height="70"
                 class="about__icon-orange"
                 src="./assets/card-orange.png"
                 alt="orange"
@@ -197,21 +204,25 @@
           </div>
 
           <div class="expereince__wrapper-cardblock">
-            <div class="expereince__card">
-              <p class="expereince__card-title">250+</p>
-              <p class="expereince__card-text">Global Customer</p>
+            <div class="card__wrapper">
+              <div class="expereince__card">
+                <p class="expereince__card-title">250+</p>
+                <p class="expereince__card-text">Global Customer</p>
+              </div>
+              <div class="expereince__card">
+                <p class="expereince__card-title">50+</p>
+                <p class="expereince__card-text">Team Member</p>
+              </div>
             </div>
-            <div class="expereince__card">
-              <p class="expereince__card-title">50+</p>
-              <p class="expereince__card-text">Team Member</p>
-            </div>
-            <div class="expereince__card">
-              <p class="expereince__card-title">156+</p>
-              <p class="expereince__card-text">Project Completed</p>
-            </div>
-            <div class="expereince__card">
-              <p class="expereince__card-title">15+</p>
-              <p class="expereince__card-text">Our Company</p>
+            <div class="card__wrapper-secondrow">
+              <div class="expereince__card">
+                <p class="expereince__card-title">156+</p>
+                <p class="expereince__card-text">Project Completed</p>
+              </div>
+              <div class="expereince__card">
+                <p class="expereince__card-title">15+</p>
+                <p class="expereince__card-text">Our Company</p>
+              </div>
             </div>
           </div>
         </div>
@@ -307,67 +318,63 @@
         </div>
 
         <div class="work__cardblock">
-          <div class="work__card">
-            <a href="#!">
+          <div class="work__cardblock-group">
+            <a href="#!" class="work__card">
               <img
+                class="work__img-m"
                 width="343"
                 height="370"
-                class="work__img"
                 src="./assets/img-c1-i1.jpg"
                 alt="gustavo"
               />
             </a>
-          </div>
-          <div class="work__card">
-            <a href="#!">
+            <a href="#!" class="work__card">
               <img
+                class="work__img-l"
                 width="343"
                 height="450"
-                class="work__img"
                 src="./assets/img-c2-i1.jpg"
                 alt="philip"
               />
             </a>
           </div>
-          <div class="work__card">
-            <a href="#!">
+
+          <div class="work__cardblock-group">
+            <a href="#!" class="work__card">
               <img
+                class="work__img-xl"
                 width="343"
                 height="370"
-                class="work__img"
                 src="./assets/img-c3-i1.jpg"
                 alt="talan"
               />
             </a>
-          </div>
-          <div class="work__card">
-            <a href="#!">
+            <a href="#!" class="work__card">
               <img
+                class="work__img-s"
                 width="343"
                 height="450"
-                class="work__img"
                 src="./assets/img-c1-i2.jpg"
                 alt="abram"
               />
             </a>
           </div>
-          <div class="work__card">
-            <a href="#!">
+
+          <div class="work__cardblock-group">
+            <a href="#!" class="work__card">
               <img
+                class="work__img-m"
                 width="343"
                 height="370"
-                class="work__img"
                 src="./assets/img-c2-i2.jpg"
                 alt="talan"
               />
             </a>
-          </div>
-          <div class="work__card">
-            <a href="#!">
+            <a href="#!" class="work__card">
               <img
+                class="work__img-l"
                 width="343"
                 height="450"
-                class="work__img"
                 src="./assets/img-c3-i2.jpg"
                 alt="abram"
               />
@@ -388,8 +395,7 @@
             <span class="block__title-orange">Great </span>
             <br />
             <span class="block__title-orange"> Words</span>
-            From Our<br />
-            Clients
+            From Our Clients
           </h2>
 
           <div class="feedback__cardblock">
@@ -566,8 +572,12 @@
               </div>
             </div>
             <div class="contact__block-mail">
-              <a href="mailto:Support87@gmial.com">Support87@gmial.com</a>
-              <a href="mailto:ijkuiu874@gmial.com">ijkuiu874@gmial.com</a>
+              <div class="contact__mail">
+                <a href="mailto:Support87@gmial.com">Support87@gmial.com</a>
+              </div>
+              <div class="contact__mail">
+                <a href="mailto:ijkuiu874@gmial.com">ijkuiu874@gmial.com</a>
+              </div>
             </div>
           </div>
 
@@ -587,10 +597,14 @@
             </div>
             <div class="contact__block-mail">
               <div class="contact__phone-wrap">
-                <p class="contact__phone">+880 265 98745</p>
+                <a href="tel:+88026598745" class="contact__phone">
+                  +880 265 98745</a
+                >
                 <p class="contact__phone-free">(Toll free)</p>
               </div>
-              <p class="contact__phone">+895 855 85589</p>
+              <a href="tel:+89585585589" class="contact__phone">
+                +895 855 85589</a
+              >
             </div>
           </div>
 
@@ -619,7 +633,6 @@
         <div class="send-message__wrapper">
           <img
             class="send-message__img"
-            width="261"
             height="168"
             src="./assets/contact-image.png"
             alt="contact image"
@@ -627,46 +640,211 @@
 
           <div class="send-message__text">
             <p class="search-form__title">
-              Send Your <br />
+              Send Your
               <span class="block__title-orange">Message To Us</span>
             </p>
 
             <form class="search-form">
-              <input
-                type="text"
-                placeholder="Name"
-                class="search-form__input"
-              />
-              <input
-                type="text"
-                placeholder="Email"
-                class="search-form__input"
-              />
-              <input
-                type="text"
-                placeholder="Mobile No"
-                class="search-form__input"
-              />
-              <input
-                type="text"
-                placeholder="Subject"
-                class="search-form__input"
-              />
+              <div class="input_wrapper-line0ne">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="search-form__input"
+                />
+                <input
+                  type="text"
+                  placeholder="Email"
+                  class="search-form__input"
+                />
+              </div>
+              <div class="input_wrapper-lineTwo">
+                <input
+                  type="text"
+                  placeholder="Mobile No"
+                  class="search-form__input"
+                />
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  class="search-form__input"
+                />
+              </div>
+
               <textarea
                 class="search-form__input-message"
                 placeholder="Send Massage"
                 resize="none"
               ></textarea>
             </form>
-            <div class="wrapper-button">
-              <button class="button__send">Send Massage</button>
-            </div>
+            <button type="submit" class="button__send">Send Massage</button>
           </div>
         </div>
       </div>
     </div>
     <!-- Contact end -->
 
-    <!-- Main -->
+    <!-- Map start -->
+    <div class="wrapper">
+      <img class="map__img" width="344" src="./assets/map.jpg" alt="map" />
+    </div>
+    <!-- Map end -->
+
+    <!-- Medal start -->
+    <div class="wrapper">
+      <div class="medal__cardblock">
+        <img
+          class="medal__img"
+          height="53"
+          src="./assets/medal-1.png"
+          alt="medal_1"
+        />
+        <img
+          class="medal__img"
+          height="53"
+          src="./assets/medal-2.png"
+          alt="me_2"
+        />
+        <img
+          class="medal__img"
+          height="53"
+          src="./assets/medal-3.png"
+          alt="medal_3"
+        />
+        <img
+          class="medal__img"
+          height="53"
+          src="./assets/medal-4.png"
+          alt="medal_4"
+        />
+      </div>
+    </div>
+    <!-- Medal end -->
+
+    <!-- Main end -->
+
+    <!-- Footer start -->
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__wrapper">
+          <div class="footer__item">
+            <div class="footer__wrapper-firstblock">
+              <div class="footer__margin">
+                <p class="footer__title">
+                  <span class="block__title-orange">Digie</span>ncy
+                </p>
+
+                <p class="footer__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a
+                  laoreet libero dis eget maecenas bibendum.
+                </p>
+
+                <ul class="footer__social-list">
+                  <li>
+                    <a href="#!"><div class="social__img-facebook"></div></a>
+                  </li>
+                  <li>
+                    <a href="#!"><div class="social__img-inst"></div></a>
+                  </li>
+                  <li>
+                    <a href="#!"><div class="social__img-twitter"></div></a>
+                  </li>
+                  <li>
+                    <a href="#!"><div class="social__img-skype"></div></a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer__margin">
+                <p class="footer__title">Company</p>
+
+                <nav class="footer__nav">
+                  <ul class="footer__menu">
+                    <li class="footer__menu-item">
+                      <a href="#!" class="footer__menu-link">About Us</a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a href="#!" class="footer__menu-link">Our Work</a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a href="#!" class="footer__menu-link">Client</a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a href="#!" class="footer__menu-link">Our Blog</a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a href="#!" class="footer__menu-link">Contact US</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+            <div class="footer__wrapper-secondblock">
+              <div class="footer__margin">
+                <h2 class="footer__title">Sevices</h2>
+
+                <div class="footer__nav">
+                  <ul class="footer__menu">
+                    <li class="footer__menu-item">
+                      <a href="#!" class="footer__menu-link">Graphic Design</a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a href="#!" class="footer__menu-link">UI/UX Design</a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a href="#!" class="footer__menu-link">Web Development</a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a href="#!" class="footer__menu-link">App Development</a>
+                    </li>
+                    <li class="footer__menu-item">
+                      <a href="#!" class="footer__menu-link">Web Hosting</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="footer__letter">
+                <h2 class="footer__title">Newsletter</h2>
+
+                <p class="footer__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+                  Lorem eget varius viverra in.
+                </p>
+                <div class="footer__input-wrap">
+                  <input
+                    type="text"
+                    class="footer__input"
+                    placeholder="info@gmail.com"
+                  />
+                  <button class="footer__input-button">
+                    <img src="./assets/send-plane-fill.png" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright">
+      <div class="wrapper">
+        <div class="copyright__item">
+          <div class="copyright__text">
+            <div class="copyright__text-icon">
+              <img src="./assets/copyright-fill.svg" alt="copyright" />
+            </div>
+            <p class="copyright__text-text">
+              Copyright 2021. All Right Reserved By Ojjomedia
+            </p>
+          </div>
+          <button class="copyright__button">
+            <img src="./assets/arrow-up-fill.svg" alt="arrow-up" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Footer end -->
   </body>
 </html>
